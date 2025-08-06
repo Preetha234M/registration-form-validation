@@ -1,0 +1,111 @@
+body {
+  background: #f0f8ff;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #1c1c1c;
+  color: white;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+body.dark .form-container {
+  background: #2b2b2b;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.error.animate-error:empty {
+  opacity: 0;
+}
+
+.error.animate-error:not(:empty) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+input:valid {
+  border-color: green !important;
+}
+
+input:invalid {
+  border-color: red !important;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa;
+}
+
+.theme-toggle {
+  text-align: right;
+}
+
+.progress-bar {
+  transition: width 0.4s;
+}
+
+/* Strength Meter */
+.strength-meter {
+  height: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background: #eee;
+  overflow: hidden;
+}
+
+.strength-meter div {
+  height: 100%;
+  transition: width 0.3s;
+}
+
+.strength-meter .weak {
+  width: 33%;
+  background: red;
+}
+
+.strength-meter .medium {
+  width: 66%;
+  background: orange;
+}
+
+.strength-meter .strong {
+  width: 100%;
+  background: green;
+}
+
+/* Slide animation */
+.animate-slide {
+  animation: slideFadeIn 0.7s ease forwards;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
