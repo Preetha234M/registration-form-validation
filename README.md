@@ -36,7 +36,7 @@ This is a fully responsive and interactive registration form built using **HTML*
 ##  Live Demo
 
 🔗 [https://your-netlify-link.netlify.app](https://6890b2bfff9ae434e17f4e89--papaya-narwhal-e6b9d8.netlify.app/)  
-_Replace this with your actual live link after deploying._
+
 
 ##  Folder Structure
 
